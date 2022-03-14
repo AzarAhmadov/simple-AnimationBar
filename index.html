@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="anim_container">
+        <span class="span_one"></span>
+        <span class="span_two"></span>
+        <span class="span_three"></span>
+    </div>
+
+    <script>
+        const animContainer = document.querySelector('.anim_container');
+        const span_one = document.querySelector('.span-one');
+        const span_two = document.querySelector('.span_two');
+        const span_three = document.querySelector('.span_three');
+
+        animContainer.addEventListener('click', function () {
+            span_two.classList.toggle('active');
+            span_three.classList.toggle('active')
+        })
+    </script>
+</body>
+
+</html>
